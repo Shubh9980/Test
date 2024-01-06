@@ -1,0 +1,12 @@
+sudo apt update
+mkdir rasik
+cd rasik
+git clone
+ls
+cd practice
+sudo apt install docker.io
+sudo docker build -t rasik .
+sudo docker run -d -p 8000:8000 rasik
+
+public url copy
+url:8000
