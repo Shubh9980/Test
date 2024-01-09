@@ -1,0 +1,42 @@
+
+** Local **
+
+1. Create Folder.
+2. Inside Folder
+	Create Public Folder
+	Create Image Folder (Add image if You Want)
+3. Open Vs Code -> Open Folder -> Create inside Folder server.js file And Write Js Code (server.js is outside the public folder).
+4. Open Terminal in Vs Code -> npm init -> Enter ->Enter -> It Will Create Package.json 
+5. Inside Public Folder -> Create Welcome.html file and Write code/ copy from git.
+6. vs Code Terminal -> npm install express ( it will add package log.json and Node Modules )
+7. start the server -> node server.js 
+8. Open Browser and run https://localhost:8000
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Local -> Git Files Transfer
+
+1. Create Docker File in notepad "Dockerfile".alltype( write Code ).
+2. Create New Git Repository clone this repo in ( other folder) and copy our old folder where readme and gitignore file having that place.
+   	CMD -> cd folder -> git status -> git add . ->(if Package warning get then use git pull command) ->git status -> git commit -m "Massage Anything"
+ * Set Git Config If Required * (genreated tocken use for login)
+-> git push
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+AWS -->
+
+1. Login Aws -> Create Instance in Mumbai Server ->genreate key -> Set Firewall -> security -> wizard -> Edit Inbound Rules -> Add Firewall -> 
+Set All Traffic and ipv4 -> Connect To Instance 
+2. sudo apt update -> git clone repo link ->ls (show folders)-> cd folder (go inside folder where server.js and Docker file are present)
+-> sudo apt install docker.io ->Y
+-> check Docker is on or off ( command:- sudo systemctl --type=service --state=running )
+->ctr c 
+-> sudo docker build -t ( write name for image ) .
+-> sudo docker images
+-> sudo docker run -d -p (port number)8000:8000 imagename (it start server and select it and run on browser)
+-> sudo docker ps.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Git Config Commands:-
+1. git config --global http.proxy http://exam@192.168.10.4:808
+2. git config --global credential.helper wincred
+3. git config --global user.name " Git User Name"
+4. git config --global user.email "Email "
+5. git config --global user.password " create token in git repo and enter this token " "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"
